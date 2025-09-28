@@ -30,13 +30,14 @@
   </distributionManagement>
 
   <build>
-    <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-compiler-plugin</artifactId>
+         <version>3.10.1</version> <!-- Or latest stable -->
+         <configuration>
+           <source>11</source> <!-- Or 1.8 if you need Java 8 -->
+           <target>11</target>
+         </configuration>
       </plugin>
 
       <plugin>
